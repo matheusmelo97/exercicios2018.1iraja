@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <label>valor 1</label>
+  <input type="number" name="valor1" id="valor1">
+   <label>valor 2</label>
+  <input type="number" name="valor2" id="valor2">
+  <label>valor 3</label>
+  <input type="number" name="valor3" id="valor3">
+  <button onclick="verificar()">enviar valores</button>
+    <div id  = "saida"></div>
+</body>
+</html>
+
+<script>
+
+    function verificar(){
+        let valor1 = document.getElementById("valor1").value;
+        let valor2 = document.getElementById("valor2").value;
+        let valor3 = document.getElementById("valor3").value;
+
+        let maior = 0
+        let menor = 0
+       
+        if ( valor1 > valor2){
+            maior = valor1;
+            menor = valor2;     
+        }
+        else {
+            maior = valor2;
+            menor = valor1;
+        }
+        if (valor3 > maior)
+    {       maior = valor3;                    
+}
+        if (valor3 < menor){
+            menor = valor3;
+}   
+        document.getElementById("saida").innerHTML ="<p> Valor Maior:" + maior + "</p><p>Valor Menor: "+ menor + "</p>";
+ 
+}
+
+</script>

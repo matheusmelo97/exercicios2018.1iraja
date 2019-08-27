@@ -9,22 +9,24 @@
 
 <body>
 
-    <label> Digite um numero </label>
-    <input type="text" name="valor" id="valor">
+    <label> Digite um valor </label>
+    <input type="number" name="valor" id="valor">
     <button onclick="verificar()">ok</button>
     <div id="saida"></div>
 </body>
 </html>
 <script>
     function verificar(){
-        var A = document.getElementById("valor").value;
-        var B = document.getElementById("valor").value;
-            if (valor >=0 ){
-            document.getElementById("saida").innerHTML = "Positivo " + valor;
-
-        } else {
-            document.getElementById("saida").innerHTML = "Negativo" + valor;
+        let valor = document.getElementById("valor").value;
+        let a = 0;
+        let b = 0;
+         if (valor >0){
+           a = valor;
+        } else {                 
+            b= valor;
         }
+            document.getElementById("saida").innerHTML = "<p>A: " + a + "</p><p>B: " + b + "</p>";
+
         }
 </script>
 

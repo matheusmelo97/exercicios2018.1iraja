@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>nota1 </label>
+    <input type="number" name="nota1" id="nota1">
+    <label>nota2</label>
+    <input type="number" name="nota2" id="nota2">
+    <label>nota3</label>
+    <input type="number" name="nota3" id="nota3">
+    <label>nota4</label>
+    <input type="number" name="nota4" id="nota4">
+
+    <button onclick="verificar()">enviar notas</button>
+        <div id  = "saida"></div>
+</body>
+</html>
+
+<script>
+
+    function verificar(){
+        let nota1 = parseFloat (document.getElementById("nota1").value);
+        let nota2 = parseFloat  (document.getElementById("nota2").value);
+        let nota3 = parseFloat  (document.getElementById("nota3").value);
+        let nota4 = parseFloat  (document.getElementById("nota4").value);
+
+        let media = parseFloat((nota1 + nota2 + nota3 + nota4) /4 );
+        
+        if (media >=5){
+            
+        }else {
+
+        }
+        document.getElementById("saida").innerHTML ="<p> Aprovado:" + media + "</p><p>Reprovado: "+ media + "</p>";
+ 
+}
+
+
+</script>
