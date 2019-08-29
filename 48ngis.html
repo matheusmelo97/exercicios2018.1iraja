@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    < src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js">
+    </>
+</head>
+<div id="saida"> </div>
+
+<body ng-app="">
+        
+        <label>Digite um valor</label>    
+        <input type="text" name="valor" ng-model="valor">
+        <div  ng-if="valor % 2 ==0"> PAR</div> 
+        <div  ng-if="valor % 2 !=0"> IMPAR</div> 
+       
+         
+        
+
+</body>
+</html>
+<!--<>
+        function parImpar(){
+            var num = document.getElementById("valor").value
+            if (num % 2 == 0){
+                document.getElementById("saida").innerHTML = "Par";
+
+            }   else {
+                document.getElementById("saida").innerHTML = "Impar";
+            }
+        
+
+        }
+
+</>
+
+
+
+

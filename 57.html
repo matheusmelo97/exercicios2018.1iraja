@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-  <label>valor 1</label>
-  <input type="number" name="valor1" id="valor1">
-   <label>valor 2</label>
-  <input type="number" name="valor2" id="valor2">
-  <label>valor 3</label>
-  <input type="number" name="valor3" id="valor3">
-  <button onclick="verificar()">enviar valores</button>
+     <label>valor 1</label>
+    <input type="number" name="valor1" id="valor1">
+     <label>valor 2</label>
+    <input type="number" name="valor2" id="valor2">
+    <label>valor 3</label>
+    <input type="number" name="valor3" id="valor3">
+    <button onclick="verificar()">enviar valores</button>
     <div id  = "saida"></div>
 </body>
 </html>
@@ -30,19 +30,20 @@
        
         if ( valor1 > valor2){
             maior = valor1;
-            menor = valor2;     
+            menor = valor2;          
         }
         else {
             maior = valor2;
             menor = valor1;
         }
-        if (valor3 > maior)
-    {       maior = valor3;                    
-}
-        if (valor3 < menor){
-            menor = valor3;
-}   
-        document.getElementById("saida").innerHTML ="<p> Valor Maior:" + maior + "</p><p>Valor Menor: "+ menor + "</p>";
+        if (valor3 > maior) {       
+            maior = valor3;
+                
+            }
+            if (valor3 < menor){
+                menor = valor3;
+            }            
+           document.getElementById("saida").innerHTML ="<p> Valor Maior:" + maior + "</p><p>Valor Menor: "+ menor + "</p>";
  
 }
 

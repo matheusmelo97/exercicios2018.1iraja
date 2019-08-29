@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>Professor1</label>
+    Valor/hora
+        <input type="number" name="vhora1" id="vhora1">
+        Quantidade/Hora
+            <input type = "number" name="qhoras1" id ="qhora1"><br><br>
+    
+    
+    <label>Professor2</label>
+    Valor/hora
+        <input type="number" name="vhora2" id="vhora2">
+        Quantidade/Hora
+            <input type = "number" name="qhoras2" id ="qhora2">
+                <button onclick="verificar()">Calcular</button>
+                         <div id ="saida"></div>
+
+</body>
+</html>
+<script>
+ function verificar(){
+
+
+    var valorh1 = document.getElementById("vhora1")
+    var  valorh2 = document.getElementById("vhora2")
+
+    var quantidadeh1 = document.getElementById("qhora1")
+    var quantidadeh2 = document.getElementById("qhora2")
+
+    var salario1 = valorh1 * quantidadeh1;
+    var salario2 = valorh2 * quantidadeh2;
+
+    if ( salario1 > salario2){
+     document.getElementById("saida").innerHTML = "O professor 1 Ganha mais que o Professor2"
+     }       
+             
+   else { 
+    document.getElementById("saida").innerHTML = "O professor 2 Ganha mais que o Professor1"
+   } 
+   }  
+</Script>
+
+
