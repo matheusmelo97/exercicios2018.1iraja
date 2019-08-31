@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label> Digite um valor de 1 a 100 </label>
+    <input type="number" name="multiplo" id="multiplo" onchange="verificar()">
+    <button onclick="verificar()">ok</button>
+    <div id="saida"></div>
+</body>
+</html>
+<script>
+    function verificar(){
+        var multiplo = document.getElementById("multiplo").value;
+        var x;
+        for(x=1; x<=100; x++){
+
+        }
+        if (multiplo % 10 ==0 ){
+            document.getElementById("saida").innerHTML = "obrigado por nos consultar";
+
+        } else {
+            document.getElementById("saida").innerHTML = "O valor não e multiplo de 10";
+        }
+        }
+    </script>
